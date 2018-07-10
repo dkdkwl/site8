@@ -1,0 +1,409 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* CSS Document */
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;
+}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans KR','맑은고딕', 'Malgun Gothic','돋움',dotum,sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+
+a {color:#333;text-decoration:none}
+a:focus, a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+/*구글 웹폰트 사용입니다.*/
+/*font-family: 'Ubuntu', sans-serif;
+font-family: 'Goudy Bookletter 1911', serif;*/
+.gnb{
+   position: absolute;
+   z-index: 100;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background: rgba(0,0,0,.2);
+   height: 100px;
+}
+.area_gnb{
+	   display: flex;
+	margin: 0 auto;
+	height: 100%;
+width: 80%;
+	
+	
+   justify-content: space-between;
+   align-items: center;
+}
+.menubar li{
+	padding: 10px 20px;
+}
+.menubar li a{
+   font-size: 16px;
+   color: #fff;
+	transition: all .2s;
+}
+.menubar li a:hover{
+	padding-bottom: 5px;
+	border-bottom: 3px solid indianred;
+	color: indianred;
+}
+.logo{
+	height: 70%;
+}
+.logo img{
+ 
+	height: 100%;
+   display: block;
+}
+.menubar ul{
+   display: flex;
+}
+.conA{
+   position: relative;
+   text-align: center;
+   display: block;
+   height: 620px;
+   background: url(../imgs/header.jpg) center no-repeat;
+   background-size: cover;
+		filter: opacity(70%);
+
+}
+.conA:before{
+   position: absolute;
+   display: block;
+   content: "";
+   width: 100%;
+   height: 100%;
+   background: rgba(100,96,102,0.5);
+   z-index: 1;
+}
+.con_header{
+   position: absolute;
+   z-index: 100;
+   color: #fff;
+   top: 32%;
+   left: 50%;
+   margin-left: -255px;
+
+}
+.con_header h2{
+   font-family: 'Pacifico', cursive;
+   font-size: 5em;
+   font-weight: 300;
+   letter-spacing: .05em;
+	padding-bottom: 10px;
+	
+}
+.con_header p{
+	padding-bottom: 60px;
+}
+input{
+   position: relative;
+	display: block;
+   margin:0 auto;
+	width: 80%;
+   padding: 20px 40px;
+   border-radius: 40px;
+	border: none;
+   background: rgba(255,255,255,1);
+}
+.conA a{
+	position: absolute;
+	right: 15px;
+	top: 10%;
+	font-size: 20px;
+	color: #ddd;
+	z-index: 100;
+	padding: 10px 15px;
+}
+.con_tit{
+   text-align: center;
+   width: 80%;
+   margin: 30px auto 35px;
+   color: #444;
+}
+.con_tit h2{
+   font-family: 'Pacifico', cursive;
+   font-size: 3.5em;
+   font-weight: 400;
+   margin-bottom: 7px;
+}
+.con_tit p{
+   margin-bottom: 20px; 
+}
+
+/* Gradient transparent - color - transparent */
+
+hr.style-two {
+ width: 60%;
+ border: 0;
+ height: 1px;
+ background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.conB .animatedParent{
+   position: relative;
+	padding: 5px .5%;
+  width: 24%;
+   color: #333;
+   font-size: 17px;
+	margin-bottom: 70px;
+}
+.img_box{
+	width: 100%;
+}
+.img_list{
+	margin: 0 auto;
+	display: flex;
+	width: 80%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+
+}
+.img_box{
+	overflow: hidden;
+}
+.conB img{
+   display: block;
+   object-fit: cover;
+   object-position: 50%;
+   width: 100%;
+	transition: all .3s;
+}
+.conB img:hover{
+	transform: scale(1.2)
+}
+.list_txt{
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 15px;
+}
+.img_box i{
+	margin-right: 2px;
+}
+.img_box a{
+	position: absolute;
+	top: 3%;
+	left: 4%;
+	z-index: 1000;
+	padding: 5px 9px;
+	background: #444;
+	color: #fff;
+	font-size: 13px;
+	transition: all .4s;
+}
+.img_box a:hover{
+	background: indianred;
+}
+.conC .animatedParent{
+	float: left;
+	width: 50%;
+}
+.conC .animatedParent img{
+	display: block;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.conC_wrap{
+	background: #efefef;
+	width: 50%;
+}
+.conC_txt h2{
+	font-family: 'Pacifico', cursive;
+   font-size: 3em;
+   font-weight: 500;
+	margin-bottom: 7px;
+}
+.conC_txt{
+	padding: 7%;	
+	box-sizing: border-box;
+}
+.conC_txt p{
+	line-height: 1.8;
+	padding-top: 30px;
+	float: left;
+	color: #888;
+}
+.conC_botton{
+	float: left;
+}
+.conC_profile{
+	display: flex;
+}
+hr.style-two2 {
+ width: 60%;
+	float: left;
+ border: 0;
+ height: 1px;
+	margin-top: 13px;
+ background-image: linear-gradient(to right, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.conC_botton{
+	margin-top: 30px;
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+	padding: 15px 25px;
+	border: 2px solid #333;
+	transition: all .5s;
+}
+.conC_botton:hover{
+	color: #fff;
+	background-color: indianred;
+	border-color: indianred;
+}
+/*컨텐츠 D에 대한 설정입니다.*/
+.img_list{
+	margin: 0 auto;
+	display: flex;
+	width: 80%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: left;
+}
+
+
+.diary_img_box{
+	overflow: hidden;
+}
+.diary_list{
+		margin: 0 auto;
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+}
+.col{
+	width: 33%;
+	padding: 0px .5% 
+}
+.conD img{
+   display: block;
+   object-fit: cover;
+   object-position: 50%;
+   width: 100%;
+	transition: all .3s;
+}
+.conD img:hover{
+	transform: scale(1.1)
+}
+.conD .animatedParent{
+   position: relative;
+	padding: 5px .5%;
+   color: #333;
+   font-size: 17px;
+}
+.conD .animated{
+	margin-bottom: 30px;
+}
+.diary_txt_box{
+	padding: 27px;
+	background: #eee;
+}
+.diary_txt_box small{
+	display: block;
+	color: #aaa;
+	margin-bottom: 10px;
+}
+.diary_tit{
+	font-size: 20px;
+	margin-bottom: 22px;
+	letter-spacing: -.015;
+	font-weight: 400;
+	color: #333;
+	transition: all .5s;
+}
+.diary_tit:hover{
+	color: indianred;
+}
+.diary_txt_box p{
+	line-height: 2em;
+	font-size: 14px;
+	color: #777;
+}
+.diary_txt_box a{
+	line-height: 2em;
+	font-size: 14px;
+	color: #777;
+}
+.diary_txt_box a:hover{
+	
+	color: #333;
+}
+.conD_wrap_botton{
+	text-align: center;
+	margin: 70px 0;
+
+}
+.conD_botton{
+	font-family: 'Pacifico', cursive;
+	font-size: 16px;
+	padding: 15px 25px;
+	border: 2px solid #333;
+	transition: all .5s;
+	display: inline-block;
+}
+.conD_botton:hover{
+	color: #fff;
+	background-color: indianred;
+	border-color: indianred;
+}
+.col a, col p{
+	display: inline;
+}
+.footer{
+	position: relative;
+	background:  url(../imgs/footer.jpg) 0 0 no-repeat;
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+	filter: opacity(70%);
+}
+/*
+.footer::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.1)
+}
+*/
+.area_footer{
+	margin: 0 auto;
+	display: inline-flex;
+	width: 80%;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	text-align: left;
+	padding: 5% 0;
+}
+.footer_col{
+	width: 33%;
+	padding: 0px .5% 
+
+}
+.footer_col h4, .footer_col p, .footer_col a{
+	color: #fff;
+}
+.footer_col h4{
+   font-family: 'Pacifico', cursive;
+	font-size: 2em;
+   font-weight: 100;
+   margin-bottom: 25px;
+}
+.footer_col p{
+	line-height: 2em;
+	letter-spacing: .08em;
+	font-weight: lighter;
+	padding-bottom: 30px;
+}
+.footer_col a:hover{
+	text-decoration: underline;
+}
